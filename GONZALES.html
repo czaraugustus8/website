@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet"  href="style.css">
+	<script src="https://kit.fontawesome.com/8d301c3c98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+<h2 class="logo">WEBSITE NI SISAR</h2>
+<nav class="navigation">
+<a href="#home" class="active">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+</header>
+<section class="parallax">
+	<img src="hill1.png" id="hill1">
+	<img src="hill2.png" id="hill2">
+	<img src="hill3.png" id="hill3">
+	<img src="hill4.png" id="hill4">
+	<img src="hill5.png" id="hill5">
+	<img src="tree.png" id="tree">
+	<h2 id="text">CZAR's WEBSITE</h2> 
+	<img src="leaf.png" id="leaf">
+	<img src="plant.png" id="plant">
+</section>
+
+<section class="sec">
+
+
+<script>
+	let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll', () => { 
+	let value = window.scrollY;
+
+    text.style.marginTop = value * 1.5 + 'px';
+    leaf.style.top = value * -1.5 + 'px';
+    leaf.style.left = value * 1.5 + 'px';
+    hill5.style.left = value * 1.5 + 'px';
+    hill4.style.left = value * -1.5 + 'px';
+    hill1.style.top = value * 1 + 'px';
+});
+</script>
+<!-- ----------about------------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+<img src="image/user.png">
+</div>
+<div class="about-col-2">
+	<h1 class= "sub-title">About Me</h1>
+	<p>Love is considered to be both positive and negative, with its virtue representing human kindness, compassion, and affection, as "the unselfish loyal and benevolent concern for the good of another" and its vice representing human moral flaw, akin to vanity, selfishness, amour-propre, and egotism, as potentially leading people into a type of mania, obsessiveness or codependency.[6][7] It may also describe compassionate and affectionate actions towards other humans, one's self, or animals.[8] In its various forms, love acts as a major facilitator of interpersonal relationships and, owing to its central psychological importance, is one of the most common themes in the creative arts<p>
+
+		<div class="tab-titles">
+				<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+				<p class="tab-links" onclick="opentab('experience')">Experience</p>
+				
+			</div>
+			<div class="tab-contents active-tab" id="skills">
+				<ul>
+					<li><span>UI?UX</span><br>Designing Web Hakdog</li> 
+					<li><span>UI?UX</span><br>Designing Web Hakdog</li>
+					<li><span>UI?UX</span><br>Designing Web Hakdog</li>
+				</ul>
+			</div>
+			<div class="tab-contents" id="experience">
+				<ul>
+				<li><span>2020</span><br>Med Publisher in Steam Workshop</li>
+				<li><span>2018</span><br>UI/UX Designer at Global I.T Ligao</li>
+				<li><span>2018</span><br>UI/UX Designer at Global I.T Ligao</li>
+			</ul>
+
+			</div>
+		</div>
+	</div>	
+</div>
+
+<!-- ----------gallery------------- --> 
+<div id="gallery">
+<div class="container">
+<h1 class="sub-title">Gallery</h1>
+<div class="work-list">
+<div class="work">
+<img src="image/user1.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+
+</div>  
+<div class="work">
+<img src="image/user2.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user3.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user4.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user5.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user6.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user7.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+<div class="work">
+<img src="image/user8.jpg">
+<div class="layer">
+	<h3>SHEESH</h3>
+	<p>OH YEAHHHHHHHHHHHHHHHHHHH.</p>
+</div>
+</div>
+
+<!-- ----------contact------------- -->
+
+<div id="contact">
+	<div class="container"> 
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact</h1>
+      <p><i class="fa-solid fa-paper-plane fa-shake"></i></i>czarpogi23@gmail.com</p>
+      <p><i class="fas fa-phone-square-alt fa-spin"></i></i>09272783474</p>
+      </div>
+      <div class="contact-right"> 
+      	<form>
+      		<input type="text" name="Name" placeholder="Your Name" required> 
+      		<input type="email" name="email" placeholder="Your Email" required> 
+      		<textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+      		<button type="submit" class="btn btn2">Submit</button>
+      	</form>
+    </div>
+    </div>
+    <div class="copyright">
+    	<p>Copyright © Czar. Made with <i class="fa-solid fa-heart fa-beat"></i> Love and<i class="fa-solid fa-skull-crossbones fa-bounce"></i> Blood </p>
+    </div> 
+</div>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+	}
+	for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+
+</script>
+
+
+
+
+
+	</body>
+</html>
